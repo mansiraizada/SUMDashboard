@@ -23,11 +23,11 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div className="flex items-center w-full h-full bg-blue-500">
-      <h1 className="text-3xl font-bold text-center p-6">User Management Dashboard</h1>
-      <div className="flex items-center justify-center p-8 w-full h-full relative flex-wrap bg-[white]">
+    <div className="w-full h-full bg-blue-500">
+      <h1 className="text-3xl font-bold h-[14%] text-center p-6">User Management Dashboard</h1>
+      <div className="flex items-center justify-center w-full h-[calc(100%-14%)] relative flex-wrap bg-[white]">
         {users.map((user) => (
-          <div key={user.id} className="mb-4 p-4 bg-black-100 ml-4 w-[25%] h-[40%] shadow-md rounded-md shrink-0">
+          <div key={user.id} className="mb-4 p-4 bg-black-100 ml-4 w-fit h-[40%] shadow-md rounded-md shrink-0">
             <img
               src={user.avatar}
               alt={`Avatar of ${user.username}`}
