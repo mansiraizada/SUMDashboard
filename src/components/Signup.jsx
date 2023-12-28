@@ -60,7 +60,7 @@ const Signup = ({ toggleForm }) => {
               id="email"
               type="text"
               value={email}
-              placeholder="Enter your Emaild" onChange={(e)=>setEmail(e.target.value)}
+              placeholder="Enter your Emai ld" onChange={(e)=>setEmail(e.target.value)}
               
             />
           </div>
